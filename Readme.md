@@ -14,4 +14,15 @@
 
 ### Composite
 - Given Term.java, TermTest.java
-- 
+- Term is the super-type of class Number which holds an integer and composite classes UnaryOperator and BinaryOperator, which hold one and two Term objects, respectively. Factorial is a concrete UnaryOperator class and Times and Plus are concrete BinaryOperator classes
+- UnaryOperator receives a Term object. Throw illegal argument exception if the term is null 
+- BinaryOperator receive two Term objects. Throw illegal argument exception if either term is null or both appropriate
+- Factorial receives term object. Throw illegal argument exception if the term is negative. Return the factorial component object it holds
+- Number receive an integer number and return the value of the number it holds 
+- Plus and Time receive two term objects and return the addition and multiplication (respectively) of the component objects they hold
+- All files need to pass TermTest.java
+
+### Iterator
+- Given FibinacciTest.java
+- Write an iterable class Fibonacci which generate the Fibonacci sequence. The class implements one method iterator() return an iterator object when requested through its method next()
+- Can not use any arrays and collections for this class (ArrayList). This program should calculate the next result when the method next() is invoked
